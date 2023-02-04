@@ -1,12 +1,5 @@
-<jqxGrid 
-	[selectionmode]="'checkbox'" 
-	[source]="source" 
-	[theme]="'material'" 
-	[autoheight]="true" 
-	[pageable]="true" 
-	[altrows]="true" 
-	[filterable]="true" 
-	[sortable]="true" 
-	[columns]="columns" 
-#grid>
-</jqxGrid>
+<jqxGrid #grid  [width]="'100%'" [autoheight]="true" [theme]="'material'" [sortable]="true" 
+  [enablebrowserselection]="true" [selectionmode]="'checkbox'"
+  [pageable]="true" [pagesize]="10"
+  [source]="dataAdapter" [columns]="columns"
+></jqxGrid>
